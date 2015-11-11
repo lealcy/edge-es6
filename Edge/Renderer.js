@@ -1,5 +1,7 @@
 "use strict";
 
+import "EventDispatcher.js";
+
 export class Renderer extends EventDispatcher {
     constructor(drawingContext, startEvent, stopEvent) {
         super();

@@ -1,6 +1,6 @@
 "use strict";
 
-import "EventDispatcher";
+import "EventDispatcher.js";
 
 export class Keyboard extends EventDispatcher {
     constructor(HTMLElement, startEvent, stopEvent) {

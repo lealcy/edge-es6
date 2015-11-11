@@ -1,6 +1,8 @@
 "use strict";
 
-export class Mouse {
+import "EventDispatcher.js";
+
+export class Mouse extends EventDispatcher {
     constructor(HTMLElement, startEvent, stopEvent) {
         this.ignoreInput = false;
         this.noMoveEventOnDrag = false;

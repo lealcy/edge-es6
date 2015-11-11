@@ -1,6 +1,6 @@
 "use strict";
 
-import "EventDispatcher";
+import "EventDispatcher.js";
 
 export class Game extends EventDispatcher {
     constructor(canvasElement) {
@@ -31,11 +31,11 @@ export class Game extends EventDispatcher {
         this.event(GameEvents.STOP, this);
     }
 
-    get running() { return this._running; };
+    get running() { return this._running; }
 
-    get drawingContext() { return this._canvas.getContext("2d"); };
+    get drawingContext() { return this._canvas.getContext("2d"); }
 
-    get canvas() { return canvas; };
+    get canvas() { return canvas; }
 }
 
 export const GameEvents = {
